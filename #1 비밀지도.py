@@ -1,4 +1,5 @@
 #2018 카카오 코딩 블라인드테스트 1번
+#https://school.programmers.co.kr/learn/courses/30/lessons/17681
 
 import random #난수를 위한 랜덤모듈
 
