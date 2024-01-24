@@ -1,4 +1,5 @@
 #2018 카카오 블라인드 코딩테스트 2번문제
+#https://school.programmers.co.kr/learn/courses/30/lessons/17682
 
 def solution_func(dartResult) : 
     dict1 = {'S' : 1 , 'D' : 2, 'T' : 3} #조건사용(문자에 따른 값을 가지기 때문에 딕셔너리 썼음)
