@@ -16,16 +16,17 @@ def solution(dots):
     y_AD = dots[3][1] - dots[0][1]
     y_BC = dots[2][1] - dots[1][1]
     
+
     #A,B,C,D가 한 직선상에 있어서 기울기가 일치할 때
-    if ((x_AB == x_CD) and (y_AB == y_CD)) and ((x_AC == x_BD) and (y_AC == y_BD)) and ((x_AD == x_BC) and (y_AD == y_BC)): 
+    if (abs(x_AB / y_AB) == abs(x_CD / y_CD)) and (abs(x_AC / y_AC) == abs(x_BD / y_BD)) and (abs(x_AD / y_AD) == abs(x_BC / y_BC)):
         answer += 1
-    
+        
     #A,B,C,D가 한 직선상에 있지 않을 때
-    elif x_AB == x_CD and y_AB == y_CD:
+    elif abs(x_AB / y_AB) == abs(x_CD / y_CD):
+            answer += 1
+    elif abs(x_AC / y_AC) == abs(x_BD / y_BD):
         answer += 1
-    elif x_AC == x_BD and y_AC == y_BD:
-        answer += 1
-    elif x_AD == x_BC and y_AD == y_BC:
+    elif abs(x_AD / y_AD) == abs(x_BC / y_BC):
         answer += 1
     else:
         answer = 0
